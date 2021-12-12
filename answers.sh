@@ -29,3 +29,16 @@ joins
     WHERE Companies.date < 2000
 
 3 : SELECT  Company FROM Employees WHERE Role = "Graphic Designer"
+
+
+Count And Filter
+
+1 : SELECT Name From Students WHERE Points = (SELECT MAX(Points) FROM Students);
+
+2 : SELECT AVG(Points) FROM students;
+
+3 : SELECT COUNT(name) FROM students WHERE Points = 500;
+
+4 : SELECT Name FROM students WHERE Name LIKE '%s%';
+
+5 : SELECT * FROM students ORDER by  Points DESC;
