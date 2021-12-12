@@ -10,6 +10,19 @@ Answer :
 8 : Remember to update **answers.sh** file
 9 : commit 
 
+Creating Table
+
+CREATE TABLE graduates 
+(
+ID INTEGER PRIMARY KEY AUTOINCREMENT ,
+name TEXT NOT NULL UNIQUE,
+Age INT,
+Gender TEXT,
+Points INT,
+graduation date
+);
+
+
 Execute SQL
 
 1 : INSERT INTO graduates ("Name", "Age", "Gender", "Points") SELECT name, Age, Gender, Points FROM students WHERE id = 4
