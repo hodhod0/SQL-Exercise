@@ -34,8 +34,8 @@ Execute SQL
 joins
 
 1 : SELECT Employees.Name, Employees.Company, Companies.Date
-    FROM Employees
-    INNER JOIN Companies ON Employees.Name=Companies.Name;
+    FROM companies
+    INNER JOIN employees 
 
 2 : SELECT Employees.Name FROM Employees
     INNER JOIN Companies ON Employees.Company=Companies.Name 
